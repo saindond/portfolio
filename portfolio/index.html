@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Daniel’s Portfolio - A showcase of my skills in web development, including projects, experience, and contact information.">
+    <meta name="keywords" content="Daniel, Portfolio, Web Development, Projects, Resume, Contact, HTML, CSS, Bootstrap">
+    <meta name="author" content="Daniel Saindon">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="vertical-navbar lowercase">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </label>
+        <ul>
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container text-center">
+            <h1>Hello, I’m Daniel</h1>
+            <p>Not yet as good a <strong>web developer</strong> as Spider-Man, but I’m working on it!</p>
+            <div class="profile-photo">
+                <img src="./images/profile.jpg" alt="Profile Photo of Spidey">
+            </div>
+            <div class="svg-container">
+                <img src="./images/skyline-line-buildings-svgrepo-com.svg" class="skyline-svg" alt="Skyline graphic">
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Resume</h2>
+            <div class="row">
+                <!-- Work Experience on the Left -->
+                <div class="col-lg-6 col-md-12">
+
+                    <h3>Work Experience</h3>
+                    <div class="accordion mb-4" id="workExperienceAccordion"> <!-- Expat Arrivals -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="expatArrivalsHeading"> <button
+                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#expatArrivalsCollapse"
+                                    aria-expanded="false" aria-controls="expatArrivalsCollapse"> <span>Online Editor @
+                                        Expat
+                                        Arrivals</span> <span class="date-range ms-auto text-muted">Sep 2022 –
+                                        Present</span>
+                                </button> </h2>
+                            <div id="expatArrivalsCollapse" class="accordion-collapse collapse"
+                                aria-labelledby="expatArrivalsHeading" data-bs-parent="#workExperienceAccordion">
+                                <div class="accordion-body">
+                                    <p>At Expat Arrivals, I am responsible for researching, writing, proofreading, and
+                                        SEO
+                                        optimising content aimed at helping expatriates navigate their new environments.
+                                        My role
+                                        also includes managing the company’s social media presence across multiple
+                                        platforms and
+                                        creating our newsletter. I ensure that all content is accurate, engaging, and
+                                        aligned
+                                        with SEO best practices to maximise reach and impact.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="pixelogicHeading"> <button
+                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#pixelogicCollapse"
+                                    aria-expanded="false" aria-controls="pixelogicCollapse"> <span>Subtitling Editor @
+                                        Pixelogic
+                                        Media</span> <span class="date-range ms-auto text-muted">Apr 2021 – Sep
+                                        2022</span>
+                                </button> </h2>
+                            <div id="pixelogicCollapse" class="accordion-collapse collapse"
+                                aria-labelledby="pixelogicHeading" data-bs-parent="#workExperienceAccordion">
+                                <div class="accordion-body">
+                                    <h4>English Editor (Mar 2022 – Sep 2022)</h4>
+                                    <p>In this role, I created English subtitles and template files for translation
+                                        across
+                                        various media. My work involved ensuring that subtitles were accurate,
+                                        culturally
+                                        sensitive, and aligned with the project’s linguistic standards.</p>
+                                    <h4>Junior Editor (Jun 2021 – Mar 2022)</h4>
+                                    <p>As a Junior Editor, I focused on creating and refining English subtitle content,
+                                        ensuring
+                                        the final output met the client’s quality standards. This role demanded high
+                                        attention
+                                        to detail and a strong command of the English language.</p>
+                                    <h4>Intern English Editor (Apr 2021 – May 2021)</h4>
+                                    <p>During my internship, I gained hands-on experience in subtitling and
+                                        localisation,
+                                        contributing to the creation of accurate and coherent subtitle files under the
+                                        guidance
+                                        of senior editors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="freelanceHeading"> <button
+                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#freelanceCollapse"
+                                    aria-expanded="false" aria-controls="freelanceCollapse"> <span>Proofreader & Copy
+                                        Editor
+                                        (Freelance)</span> <span class="date-range ms-auto text-muted">2020 –
+                                        2021</span> </button> </h2>
+                            <div id="freelanceCollapse" class="accordion-collapse collapse"
+                                aria-labelledby="freelanceHeading" data-bs-parent="#workExperienceAccordion">
+                                <div class="accordion-body">
+                                    <p>As a freelance Proofreader and Copy Editor, I reviewed and edited content to
+                                        ensure
+                                        correct grammar and style. My work included proofreading, editing, and
+                                        evaluating final
+                                        copy to verify that content aligned with established guidelines.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="mondeorHeading"> <button
+                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#mondeorCollapse"
+                                    aria-expanded="false" aria-controls="mondeorCollapse"> <span>IT Administrator @
+                                        Mondeor Eco
+                                        School</span> <span class="date-range ms-auto text-muted">2016 – 2020</span>
+                                </button> </h2>
+                            <div id="mondeorCollapse" class="accordion-collapse collapse"
+                                aria-labelledby="mondeorHeading" data-bs-parent="#workExperienceAccordion">
+                                <div class="accordion-body">
+                                    <p>At Mondeor Eco School, I managed IT operations and assisted the finance team,
+                                        introduced
+                                        a new school management system, and handled some high-level budget reporting for
+                                        the
+                                        directors. This role required a combination of technical skills, financial
+                                        acumen and
+                                        the ability to adapt to various challenges in a dynamic environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education and Training on the Right -->
+                <div class="col-lg-6 col-md-12">
+                    <h3>Education and Training</h3>
+                    <div class="accordion mb-4" id="educationAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="webDevBootcampHeading">
+                                <button
+                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#webDevBootcampCollapse"
+                                    aria-expanded="false" aria-controls="webDevBootcampCollapse">
+                                    <span>Complete 2024 Web Development Bootcamp <br>with Angela Yu @ Udemy</span>
+                                    <span class="date-range ms-auto text-muted">Ongoing</span>
+                                </button>
+                            </h2>
+                            <div id="webDevBootcampCollapse" class="accordion-collapse collapse"
+                                aria-labelledby="webDevBootcampHeading" data-bs-parent="#educationAccordion">
+                                <div class="accordion-body">
+                                    <h4>Full-Stack Web Development</h4>
+                                    <p>A comprehensive course covering full-stack web development, including HTML, CSS,
+                                        JavaScript, Node.js, React, PostgreSQL, Web3 and DApps. This ongoing training is
+                                        equipping me with the
+                                        skills to build robust, user-friendly websites and applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="uctCopyeditingHeading">
+                                <button
+                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#uctCopyeditingCollapse"
+                                    aria-expanded="false" aria-controls="uctCopyeditingCollapse">
+                                    <span>Short Course in Copyediting <br>@ University of Cape Town</span>
+                                    <span class="date-range ms-auto text-muted">2019</span>
+                                </button>
+                            </h2>
+                            <div id="uctCopyeditingCollapse" class="accordion-collapse collapse"
+                                aria-labelledby="uctCopyeditingHeading" data-bs-parent="#educationAccordion">
+                                <div class="accordion-body">
+                                    <h4>Copyediting and Proofreading</h4>
+                                    <p>This course provided specialised training in proofreading, editing, and enhancing
+                                        written communication for various media, honing my skills in precision and
+                                        clarity.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="stellenboschEducationHeading">
+                                <button
+                                    class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#stellenboschEducationCollapse" aria-expanded="false"
+                                    aria-controls="stellenboschEducationCollapse">
+                                    <span>BA @ Stellenbosch University</span>
+                                    <span class="date-range ms-auto text-muted">2012 – 2015</span>
+                                </button>
+                            </h2>
+                            <div id="stellenboschEducationCollapse" class="accordion-collapse collapse"
+                                aria-labelledby="stellenboschEducationHeading" data-bs-parent="#educationAccordion">
+                                <div class="accordion-body">
+                                    <h4>BA in Humanities, majoring in Philosophy & English Literature</h4>
+                                    <p>This degree provided a solid foundation in the humanities, enhancing my ability
+                                        to think
+                                        critically and communicate effectively.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container text-center">
+            <div class="section-content">
+                <h2>Projects</h2>
+                <div class="project-row row">
+                    <div class="col-md-6">
+                        <p class="text-left"><em>"A concept is a brick. It can be used to build a courthouse of reason.
+                                Or
+                                it can be thrown through the window."</em> — Gilles Deleuze</p>
+                        <p class="text-left">BRB, collecting <s>bricks</s> coding concepts! In the meantime, please
+                            enjoy
+                            these homegrown, organic placeholders.</p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center"> <img
+                            class="construction-gif" src="./images/construction.gif" alt="LEGO I have no idea gif">
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h4>Project 1</h4>
+                        <p>Coming soon…</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Project 2</h4>
+                        <p>Coming soon…</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Project 3</h4>
+                        <p>Coming soon…</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Project 4</h4>
+                        <p>Coming soon…</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Project 5</h4>
+                        <p>Coming soon…</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Project 6</h4>
+                        <p>Coming soon…</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container about-contact-container">
+            <div class="row about-contact-row">
+                <div class="col-lg-4 col-md-12 about-contact-column">
+                    <div id="about">
+                        <h2 class="text-center">About me</h2>
+                        <p><i class="fas fa-book"></i> I’ve always had a deep love for stories and worldbuilding in all
+                            its forms. It’s why I got my BA, it’s why I tried my hand at subtitling, and it’s what I
+                            love most about my day job as an online editor, where I research and write helpful guides
+                            (albeit to travel – in this world).</p>
+                        <p><i class="fas fa-code"></i> To me, web developing is the perfect blend of creativity and
+                            technical challenges – constructing digital experiences that communicate ideas as
+                            effectively as a good story. I’m eager to continue growing in this space.</p>
+                        <p><i class="fas fa-atom"></i> Please reach out if you want to make some magic together, or if
+                            you want to compare reading lists or watchlists! What are you reading / watching / playing?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 about-contact-column">
+                    <div id="contact" class="lowercase">
+                        <h2 class="text-center">Contact Me</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="optional" class="form-label">(Optional) Which website out there made you do
+                                    a double-take?</label>
+                                <input type="text" class="form-control" id="optional"
+                                    placeholder="For me, it was shetlandlochs.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bottom-container text-center lowercase"> <a class="btn btn-outline-primary btn-social mx-1"
+            href="https://www.linkedin.com/in/daniel-saindon-58709253" target="_blank"> <i
+                class="fab fa-linkedin-in"></i> LinkedIn </a> <a class="btn btn-outline-primary btn-social mx-1"
+            href="https://github.com/saindond" target="_blank"> <i class="fab fa-github"></i> GitHub </a>
+        <p><em>Making the web a bit weirder, one line of code at a time.</em></p>
+        <p class="copyright">©2024 Daniel Saindon</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
