@@ -126,7 +126,7 @@ em {
 
 @media (max-width: 768px) {
     .body {
-        padding-right: auto;
+        padding-right: 0px;
     }
     
     .navbar-toggler {
