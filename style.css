@@ -8,7 +8,7 @@
     --button-hover-bg-color: #ff6f00;
     --button-hover-text-color: #1e1e2f;
     --border-color: #3e3e4e;
-    --very-dark-background-color: #0d0d25
+    --very-dark-background-color: #0d0d25;
 }
 
 .lowercase,
@@ -26,7 +26,7 @@ body {
     color: var(--text-color);
     font-family: 'Work Sans', sans-serif;
     margin: 0;
-    padding-right: 60px; /* Add padding to make space for the scrollbar */
+    padding-right: 60px; /* Add padding to make space for the scrollbar on desktop */
     line-height: 1.6;
 }
 
@@ -113,7 +113,7 @@ em {
 .vertical-navbar .nav-link:hover,
 .vertical-navbar .nav-link.active {
     background-color: var(--accent-color);
-    color: var (--button-hover-text-color);
+    color: var(--button-hover-text-color);
 }
 
 .menu-toggle {
@@ -125,10 +125,10 @@ em {
 }
 
 @media (max-width: 768px) {
-    .body {
-        padding-right: 0px;
+    body {
+        padding-right: 0; /* Remove padding on mobile to avoid squishing the content */
     }
-    
+
     .navbar-toggler {
         display: block;
         margin: 10px;
@@ -306,6 +306,7 @@ img {
 .project-card p {
     color: var(--secondary-text-color);
 }
+
 .about-contact-container {
     padding: 0px;
     border: 0px;
@@ -329,7 +330,6 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-
 }
 
 @media (max-width: 768px) {
@@ -398,4 +398,3 @@ i:hover {
 footer p {
     margin-top: 20px;
 }
-
