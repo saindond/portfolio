@@ -125,6 +125,10 @@ em {
 }
 
 @media (max-width: 768px) {
+    .body {
+        padding-right: auto;
+    }
+    
     .navbar-toggler {
         display: block;
         margin: 10px;
